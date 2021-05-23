@@ -1,0 +1,80 @@
+body{
+  background-color: black;
+}
+
+.lds-ring {
+  top: 50% ;
+  left: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+
+}
+.ld-ring {
+  top: 50% ;
+  left: 50%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  border: 8px solid ;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: transparent aqua transparent transparent;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+  border-color:violet transparent transparent transparent;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+  border-color:yellow transparent transparent transparent;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+  border-color: tomato transparent transparent transparent;
+}
+.ld-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  margin-left: -14px;
+  margin-top: -15px;
+  width: 94px;
+  height: 94px;
+  border: 1px solid ;
+  color: blue;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  animation-direction: reverse;
+  border-color: aqua transparent transparent;
+}
+.ld-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+  border-color:violet transparent transparent transparent;
+}
+.ld-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+  border-color:yellow transparent transparent transparent;
+}
+.ld-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+  border-color: tomato transparent transparent transparent;
+}
+
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
